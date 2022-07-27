@@ -31,4 +31,3 @@ bf3D is published under [MIT](./LICENSE) license.
 ## To Do
 
 1. Shell mode
-2. Handle overflow

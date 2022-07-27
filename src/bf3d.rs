@@ -25,9 +25,17 @@ pub fn bf3d(instructions: String, output_to_stdout: bool) -> Vec<char> {
 		} else if instructions.as_bytes()[ip] == b'\\' && dp.z != 0 {
 			dp.z -= 1;
 		} else if instructions.as_bytes()[ip] == b'+' {
-			field[dp.x][dp.y][dp.z] += 1;
+			if field[dp.x][dp.y][dp.z] == 255 {
+				field[dp.x][dp.y][dp.z] = 0;
+			} else {
+				field[dp.x][dp.y][dp.z] += 1;
+			}
 		} else if instructions.as_bytes()[ip] == b'-' {
-			field[dp.x][dp.y][dp.z] -= 1;
+			if field[dp.x][dp.y][dp.z] == 0 {
+				field[dp.x][dp.y][dp.z] = 255;
+			} else {
+				field[dp.x][dp.y][dp.z] -= 1;
+			}
 		} else if instructions.as_bytes()[ip] == b'.' {
 			let c = field[dp.x][dp.y][dp.z] as char;
 			if output_to_stdout {
