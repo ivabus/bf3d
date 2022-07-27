@@ -24,9 +24,9 @@ bf3D is published under [MIT](./LICENSE) license.
 
 ## Running
 
-1. Clone repo
+1. `cargo install bf3d`
 2. Create file with bf3d code
-3. `cargo run <file>` where <file> is your bf3d code
+3. `bf3d <file>` where <file> is your bf3d code
 
 ## To Do
 
