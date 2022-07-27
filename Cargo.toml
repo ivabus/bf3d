@@ -1,6 +1,6 @@
 [package]
 name = "bf3d"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "brainfuck in 3D space"
 readme = "README.md"

@@ -3,8 +3,18 @@ use std::{env};
 mod bf3d;
 
 fn main() {
-    let input = std::fs::read_to_string(&env::args().collect::<Vec<String>>()[1])
-        .expect("Couldn't read file. Give a file with bf3d code as argument");
+    if &env::args().len() < &2usize {
+        println!("Give a file with bf3d code as argument");
+        std::process::exit(255);
+    }
+    let input = std::fs::read_to_string(&env::args().collect::<Vec<String>>()[1]);
+    let input = match input {
+        Ok(file) => file,
+        Err(error) => {
+            println!("{}", error.to_string());
+            std::process::exit(255);
+        },
+    };
     bf3d::bf3d(input, true);
 }
 
