@@ -1,4 +1,4 @@
-# BF3D
+# bf3D
 > brainfuck in 3D space
 
 ## Instruction set
