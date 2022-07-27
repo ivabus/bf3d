@@ -1,4 +1,4 @@
-# bf3D
+# bf3D [![Build & Test](https://github.com/ivabus/bf3d/actions/workflows/rust.yml/badge.svg)](https://github.com/ivabus/bf3d/actions/workflows/rust.yml)
 > brainfuck in 3D space
 
 ## Instruction set
