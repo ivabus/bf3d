@@ -21,3 +21,14 @@
 ## License
 
 bf3d is published under [MIT](./LICENSE) license.
+
+## Running
+
+1. Clone repo
+2. Create file with bf3d code
+3. `cargo run <file>` where <file> is your bf3d code
+
+## To Do
+
+1. Shell mode
+2. Handle overflow
