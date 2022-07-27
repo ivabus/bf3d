@@ -20,7 +20,7 @@
 
 ## License
 
-bf3d is published under [MIT](./LICENSE) license.
+bf3D is published under [MIT](./LICENSE) license.
 
 ## Running
 
