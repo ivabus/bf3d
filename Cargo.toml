@@ -1,0 +1,13 @@
+[package]
+name = "bf3d"
+version = "0.1.0"
+edition = "2021"
+description = "brainfuck in 3D space"
+readme = "README.md"
+repository = "https://github.com/ivabus/bf3d"
+license = "MIT"
+
+authors = ["Ivan ivabus Bushchik"]
+
+[badges]
+maintenance = {status = "actively-developed"}
